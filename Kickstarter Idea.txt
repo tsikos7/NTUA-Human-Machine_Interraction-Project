@@ -1,0 +1,93 @@
+You need a website to throw a party; yeah, there's Facebook events. But Events is for getting your event out there -- all of the work that goes into has to be handled elsewhere.  But where? Party.com. A website that can be used by clubs, societies, or ordinary people planning surprise parties to Christmas pageants; DIY party planning. People can be assigned tasks, taking on roles as contributors, advertisers, and there could be an easy display list of required materials, expected guests, finances and more.
+
+Project 1
+
+Κεντρική Ιδέα
+
+Διευκόλυνση για την οργάνωση Event
+Οχι μονο προώθηση του event (οπως fb) αλλά και συλλογική διοργάνωση του event απο τους χρήστες
+
+
+Functionalities
+
+1. Δημιουργία Events
+	Δημιουργία Events όπου θα περιέχονται οι πληροφορίες όπως
+	ώρες, διάρκεια, τοποθεσία, προσκεκλημένοι, πως να πατε, 
+	ανοιχτος/κλειστός χώρος, ποιος dj θα παίζει, φωτογραφίες του χώρου κτλ κτλ
+2. Διαμοιρασμος καθηκόντων σε χρήστες
+	Διαχωρισμός απλών καλεσμένων με contributors, οι οποιοι αναλαμβάνουν
+	απλές εργασίες όταν δεν απαιτείται επαγγελματική διαδικασία, όπως
+	οργάνωση catering, διακόσμηση χώρου, εύρεση dj κτλ κτλ
+3. Πρόσκληση χρηστών
+	Ικανότητα πρόσκλησης χρηστών της εφαρμογής καθώς και αυτόματη οργάνωση facebook events με τα ίδια στοιχεία
+4. Προβολή απαραίτητων υλικών για τη διοργάνωση σε λίστα
+	Προβολή λίστας που θα φαίνονται όλα τα υλικά που θα χρειαστούν, 
+	όπως ποτήρια, κονφετί, φαγητά, ηχεία κτλ κτλ
+5. Αναλυτική περιγραφή κόστους διοργάνωσης
+	Υπολογισμός κόστους διοργάνωσης και αναλυτική παρουσίαση αυτού. 
+	Καταμερισμός του κόστους στους χρήστες/contributors
+6. Προσφορά συμβουλών για διοργάνωση παρτεη
+	Ιδέες για τη διοργάνωση όπως συμβουλές για χώρους, τοποθεσιες 
+7. Δυνατότητα εύρεσης και κράτησης μοναδικών χώρων
+	Εύκολο booking μοναδικών χώρων απευθείας απο την εφαρμογή
+8. Δυνατότητα διαμοιρασμού στα κοινωνικά δίκτυα
+	Δυνατότητα share σε μέσα κοινωνικής δικτύωσης όπως Facebook
+	Twitter, Instagram, myspace
+9. Διαχωρισμός private και public events
+	Προβολή των privates events μόνο στους προσκεκλημένους χρήστες
+	καθώς και προβολή στην κεντρική σελίδα public events των χρηστών
+	ή των μαγαζιών
+10. Δυνατότητα εύρεσης και παραγγελίας catering/ποτα κτλ
+	Σύνδεση με κάβες και catering εταιρίες που θα προσφέρουν μοναδικό
+	φαγητό σε τιμές ευκαιρίας
+
+
+
+Project 2
+
+GOMS
+
+Δημιουργία Events
+Goal: επιλογή ώρας/μέρους/καλεσμένων κτλ
+Operators: Click Δημιουργία Event, Choose and Click κτλ κτλ (στην αρχική σελ)
+Methods: 1η για τα Δημιουργία, 2η Επεξεργασία Event
+Selection: if (event exists) then <2nd Method>
+			else if (event not exists) then <1st Method> 
+
+
+Διαμοιρασμος καθηκόντων σε χρήστες
+Goal: Δημιουργία καθηκόντων, ανάθεση των "locked/unlocked" σε χρήστες από τον διαχειριστή του event και επιλογή απο τον κάθε προσκεκλημένο "unlocked" καθηκόντων 
+Operators: Click Δημιουργία, Click Ανάθεση (unlocked/locked tasks), Click Ανάληψη (από unlocked tasks)
+Methods: 1η Δημιουγία, 2η Αναθεση σε χρήστες από admin, 3η Ανάληψη των unlocked απο απλούς users
+Selection: if (admin && task not exists) then <1η Μεθοδος>
+			if (admin) then <2η Μέθοδος>
+			else if (!admin) then <3η Μέθοδος>
+
+
+Προσφορά συμβουλών για διοργάνωση παρτεη
+Goal: Διευκόλυνση οργάνωσης παρτεη με παροχή συμβουλών από τους ίδιους τους χρήστες σε ανοιχτή πλατφορμα
+Operators: Click for Advice and submit, Click Advice fill necessary field submit
+Methods: 1η Ask for Advice, 2η Offer Advice
+Selection: if (Asking for Advice) then <1η Μεθοδος>
+			else <2η Μέθοδος>
+
+Δυνατότητα εύρεσης και κράτησης μοναδικών χώρων
+Goal: Εύρεση Χώρων ανάμεσα σε πολλούς διαθέσιμους, Επικοινωνία με τους υπευθυνους των χώρων, Κράτηση χώρου
+Operators: Click Αναζήτηση και επιλογή πεδίων και click Book!! button, Click Επικοινωνία και συμπλήρωση φόρμας και submit,  
+Methods: 1η Αναζήτηση Χώρων, 2η Επικοινωνία, 3η Κράτηση χώρου
+Selection: if (Place not chosen) then <1η Μέθοδος>
+			if (not informed) then <2η Μεθοδος>
+			if (not Booked) then <3η Μεθοδος>
+
+Διαχωρισμός private και public events
+Goal: Διαχωρισμος σε κλειστά στο κοινό και ανοιχτα events. Προβολή ανοιχτών events θα εμφανίζονται στην αρχική σελίδα για άμεση διαθεσιμότητα
+Operators: Click inbox and check for privates, click accept/decline, check homepage and pick favourite public event
+Methods: 1η Eλεγχος μηνυμάτων για προσκληση (για private) και Accept or Decline, 2η Έλεγχος αρχικής σελίδας για public και Επιλογή
+Selection: if (private invitation) then <1η Μέθοδος>
+			else <2η Μέθοδος>
+			
+
+
+Target Groups: X, Y, Z
+Δείκτες Ευχρηστίας: Βλέπε Πινακάκι Σκούρα
+

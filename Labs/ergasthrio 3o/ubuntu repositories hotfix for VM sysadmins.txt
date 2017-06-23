@@ -1,0 +1,23 @@
+#o στόχος είναι να αντικαταστήσουμε το αρχείο
+#/etc/apt/sources.list με το /etc/apt/sources.list.bak
+
+#κάντε login με το putty. πρέπε να είμαστε στο /home/user. δοκιμάστε:
+pwd
+#θα σας δείξει το directory που είστε
+#become superuser: 
+sudo su
+#και βάλτε το password του user - αυτό που κάνατε login με το putty
+
+#make a backup of the University of Crete uoc (!!) repositories:
+cp /etc/apt/sources.list /etc/apt/sources.list.uoc.backup
+
+#bring back the default ubuntu repositories (αντικατάσταση του αρχείου):
+cd /etc/apt/
+mv sources.list.bak sources.list
+#πάμε πίσω στο home directory: 
+cd ~
+#κάνουμε update τη λίστα των διαθέσιμων πακέτων με το νέο repository και μετά upgrade: 
+apt-get update
+apt-get upgrade
+#συνεχίστε με την εγκατάσταση του phpmyadmin, όπως την έχουμε δείξει
+apt-get install phpmyadmin

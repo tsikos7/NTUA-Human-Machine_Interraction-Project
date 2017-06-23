@@ -1,0 +1,21 @@
+Site Map - Flow Chart
+DRAW.IO https://www.draw.io/
+Pen and Paper
+INTERFACESKETCH http://www.interfacesketch.com/
+Wireframing
+PENCIL https://pencil-project.en.uptodown.com/windows/download (v2.0.3 - only for PCLAB!!)
+PENCIL http://pencil.evolus.vn/ (latest version - use this at home)
+Mockup (Vector Design)
+INKSCAPE https://inkscape.org/en/download/ (only for PCLAB choose Win XP 32bit)
+Prototyping
+CONCEPT.LY http://concept.ly/ (sign up for free)
+MARVEL https://marvelapp.com/ (sign up for free)
+
+Image Editing
+GIMP https://www.gimp.org/
+Lorem Ipsum Generator
+http://generator.lorem-ipsum.info/
+
+Images
+GOOGLE IMAGE https://www.google.gr/imghp
+OPENCLIPART https://openclipart.org/
